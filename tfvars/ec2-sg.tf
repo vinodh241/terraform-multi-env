@@ -7,7 +7,7 @@ resource "aws_instance" "RoboShop" {
   tags = merge(
     var.common_tags,
     {
-      Name = "${var.instances[count.index]}-${var.environment}"
+      Name      = "${var.instances[count.index]}-${var.environment}"
       Component = var.instances[count.index]
       #environment = dev
     }
