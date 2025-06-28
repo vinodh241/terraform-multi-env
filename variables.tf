@@ -32,7 +32,8 @@ variable "ami_id" {
 }
 
 variable "instance_type" {
-  default = {}
+
+  # default = {}
 }
 
 variable "ec2_tags" {
@@ -86,10 +87,5 @@ variable "instances" {
 
 variable "zone_id" {
     default = "Z07082243VUB84KU714AG"
-  
-}
-
-variable "domian_name" {
-    default = "vinodh.site"
   
 }

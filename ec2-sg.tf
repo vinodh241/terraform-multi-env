@@ -14,6 +14,7 @@ resource "aws_instance" "RoboShop" {
     }
   )
 }
+# creating security groups
 
 resource "aws_security_group" "allow_all" {
   name        = var.sg_name
